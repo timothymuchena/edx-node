@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DEV279x Project:</title>
+		<link rel="stylesheet" href="dev279xproject.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header id="header" class="header">
+			<h2>Welcome to my <del>calculator</del> DEV279x project</h2>
+			<ul>
+				<li><a href="#menu-pane">Menu</a></li>
+				<li><a href="#result-pane">Results</a></li>
+			</ul>
+		</header>
+		
+		<div id="toTop">
+			<a href="#header">Top</a>
+		</div>
+		
+		<div class="wrapper">
+			<section id="menu-pane" class="menu">
+				<h2>Numeric functions menu and guidance</h2>
+				
+				<label for="user-name">Enter your name: </label>
+				<input type="text" id="user-name" name="user-name" placeholder="or use John Doe"><br /><br />
+				
+				<label for="numeric-field">Enter a numeric<sup>*</sup> value: </label>
+				<input type="text" id="numeric-field" name="numeric-field" placeholder="integer and positive"><br /><br />
+				<small>*: Numbers with decimal point will be truncated to integer values. Negative numbers will be turned into their positive counterparts. If results are out of the parser numeric range, &quot;Infinity&quot; will be returned.</small>
+				
+				<br />
+				<br /><label for="sumUpTo">Sum of the first n natural numbers:</label>
+				<input type="checkbox" id="sumUpTo" name="operation" value="sum"><br />
+				
+				<br /><label for="fibo">The n-th Fibonacci value: </label>
+				<input type="checkbox" id="fibo" name="operation" value="fibo"><br />
+				
+				<br /><label for="factorial">Factorial of n:</label>
+				<input type="checkbox" id="factorial" name="operation" value="factorial"><br />
+				
+				<br />
+				<button id="numeric-button">Calculate</button>
+				
+				<h3>Enough with this math!</h3>
+				
+				<p>If you feel like you had enough of factorials and Fibonacci sequence, maybe you&apos;d like to take a look at our flying <del>square shaped</del> circle shaped divs.</p>
+				
+				<br />
+				<button id="entertainer-button">Entertainer</button>
+				
+			</section>
+			
+			<section id="result-pane" class="menu">
+				<h2>Displaying results</h2>
+				<p id="display-results"></p>
+				
+				<div id="entertainer-div">
+					<div id="inner-red"></div>
+					<div id="inner-green"></div>
+					<div id="inner-blue"></div>
+				</div>
+			</section>
+			
+		</div>
+		
+		<footer id="footer" class="footer">
+			<h2>Final heading</h2>
+			<p>This app is intended to fulfill the DEV279x final project requirements. <a href="https://www.edx.org/course/building-interactive-prototypes-using-microsoft-dev279x " target="_blank">DEV279x</a> is a course of study delivered by Microsoft on the <a href="https://www.edx.org/" target="_blank">edX</a> platform. This first edition of the course started on 1st of July, 2017.</p>
+		</footer>
+		<script src="dev279xproject.js"></script>
+	</body>
+</html>

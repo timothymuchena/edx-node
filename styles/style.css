@@ -1,0 +1,145 @@
+/* styles for DEV279x project */
+* {
+	box-sizing:border-box;
+}
+
+body{
+	width:80%;
+	margin:0 auto;
+	/*font-family: 'Roboto Condensed', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h2{
+	text-align:center;
+}
+
+/* clearfix for floated columns */
+
+.wrapper:before, .wrapper:after{
+	content:"";
+	display:table;
+}
+
+.wrapper:after{
+	clear:both;
+}
+
+/* common styles for page sections */ 
+
+.header, .footer, .menu{
+	border:3px ridge gray;
+	padding:.5em;
+	margin-top:.5em;
+	margin-bottom:.5em;
+}
+
+#header{
+	background: #99ccff;
+	background:linear-gradient(to right, #99ccff, azure);
+}
+
+#header li{
+	display:inline-block;
+	padding:.5em;
+	margin:.2em;
+	border:2px solid lightgray;
+	border-radius:6px;
+	background-color:navy;
+}
+
+#header li:hover{
+	background-color:darkseagreen;
+}
+
+#header li a, #toTop a, #footer a{
+	text-decoration:none;
+	color:#fff;
+}
+
+#footer{
+	background-color: cadetblue;
+	background:linear-gradient(to right, cadetblue, #99ccff);
+	color:#000;
+	text-align:center;
+}
+
+.menu{
+	width:49%;
+	height:80vh;
+	overflow:auto;
+	float:left;
+}
+
+.menu:nth-of-type(1){
+	background:azure;
+	background:linear-gradient(to right, azure, lavender);
+	margin-right:1%;
+}
+
+.menu:nth-of-type(2){
+	background:lavender;
+	background:linear-gradient(to right, lavender, cadetblue);
+	margin-left:1%;
+}
+
+#display-results, #entertainer-div{
+	display:none;
+	border:6px dashed navy;
+	background-color:#f4e542;
+	padding:.5em;
+}
+
+#entertainer-div{
+	height:80%;
+	width:90%;
+	margin:1em auto;
+	position:relative;
+}
+
+#inner-red, #inner-green, #inner-blue{
+	width:100px;
+	height:100px;
+	position:absolute;
+	border-radius:50%;
+}
+
+#inner-red{
+	background-color:#f00;
+}
+
+#inner-green{
+	background-color:green;
+}
+
+#inner-blue{
+	background-color:#00f;
+}
+
+#toTop{
+	position:fixed;
+	top:50vh;
+	right:1em;
+	padding:.5em;
+	margin:.2em;
+	border:2px solid lightgray;
+	border-radius:50%;
+	background-color:navy;
+}
+
+#toTop:hover{
+	background-color:deepskyblue;
+}
+
+/* tablets and phones */
+
+@media screen and (max-width:767px){
+	.menu{
+		width:100%;
+		
+	}
+	
+	#menu-pane, #results-pane{
+		margin:1em 0 0;
+	}
+}
